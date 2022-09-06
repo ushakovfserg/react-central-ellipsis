@@ -1,0 +1,16 @@
+.CentralEllipsis {
+  display: flex;
+  overflow: hidden;
+  user-select: all;
+}
+
+.CentralEllipsis-Leading {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.CentralEllipsis-Leading[data-shrinked] + .CentralEllipsis-Trailing {
+  margin-left: -1px;
+}
